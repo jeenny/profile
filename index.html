@@ -56,7 +56,10 @@ body {
  grid-row: 4 / span 3;
  width: 250px;
  z-index:-1;
+  animation-name: fade;
+    animation-duration: 4s;
 }    
+
 
 .fa {
   font-size: 30px;
@@ -67,8 +70,8 @@ body {
   color: white;
   grid-column: 1 / span 2;
   grid-row: 30 / span 1;
-  margin-top: 100px;
-  margin-left: 60px;
+  margin-top: 80px;
+  margin-left: 20px;
 }
 
 .fa:hover {
@@ -80,6 +83,11 @@ body {
   color: white;
 }
 
+@keyframes fade {
+    0% {
+      opacity: 0.0;}
+
+      
 </style>
 </head>
 
