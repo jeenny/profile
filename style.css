@@ -1,58 +1,74 @@
 * {
-  box-sizing: border-box;}
+  box-sizing: border-box;
+}
 
 .container {
   display: grid;
   grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
   grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-  grid-template-areas:
-  	  "buffer buffer buffer buffer"
-      "header header header header"
-      "content content content content"
-      "content2 content2 content2 content2"
-      "footer footer footer footer";
+  grid-template-areas: "buffer buffer buffer buffer" "header header header header" "content content content content" "content2 content2 content2 content2" "footer footer footer footer";
 }
 
 body {
   background-image: url(https://images.unsplash.com/photo-1517315003714-a071486bd9ea?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1051&q=80);
   background-repeat: no-repeat;
-  background-attachment: fixed;  
+  background-attachment: fixed;
   background-size: cover;
   font-family: helvetica;
 }
 
-.item1 {
+.jenny {
+  font-size: 10vmin;
   grid-column: 1 / span 10;
   grid-row: 5 / span 1;
   justify-self: center;
-        margin-top: -10px;
-  margin-bottom: 20px;
+  padding-top: -10px;
+  padding-bottom: 20px;
 }
 
-.item1:hover {
-    opacity: 0.6;
-    color: #a295bd;
-}
-
-.item2 {
+.bio {
   grid-column: 2 / span 8;
   grid-row: 7 / span 1;
   justify-self: centre;
-      margin-top: 80px;
+  margin-top: 80px;
   margin-bottom: 20px;
-}  
+}
 
-.item3 {
- grid-column: 7 / span 2;
- grid-row: 4 / span 3;
- width: 250px;
- z-index:-1;
+.picture {
+  grid-column: 7 / span 2;
+  grid-row: 4 / span 3;
+  position: relative;
+  width: 100%;
+  z-index: -1;
   animation-name: fade;
-    animation-duration: 4s;
-}    
-
+  animation-duration: 4s;
+}
 
 .fa {
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  bottom: 30px;
+  left: 30px;
+  padding-top: 80px;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.4;
+  color: #bba5c4;
+}
+
+.fa-linkedin {
+  color: white;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.0;
+  }
+
+/*
   font-size: 30px;
   width: 50px;
   text-align: end;
@@ -62,19 +78,4 @@ body {
   grid-column: 1 / span 2;
   grid-row: 30 / span 1;
   margin-top: 100px;
-  margin-left: 60px;
-}
-
-.fa:hover {
-    opacity: 0.4;
-    color: #bba5c4;
-}    
-    
-.fa-linkedin {
-  color: white;
-}
-
-@keyframes fade {
-    0% {
-      opacity: 0.0;}
-
+  margin-left: 60px; */
